@@ -55,7 +55,6 @@ get_header();
                         <button>Send</button>
                         <p>OBS. Jeg bestræber mig på at vende tilbage inden 24 timer.</p>
                     </div>
-
                     </form>
                 </div>
             </section>
