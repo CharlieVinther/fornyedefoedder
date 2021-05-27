@@ -19,41 +19,41 @@ get_header();
 				<div id="index_section_one" class="section_one_container_one">
 					<div id="behandlinger">
 					<img src="" alt="">
-						<h2 class="behandlinger">Behandlinger</h2>
+						<h2 class="behandlinger">Behandlinger og priser</h2>
 						<p></p>
-						<button></button>
+						<button>Se mere</button>
 					</div>
 					
 					<div id="fodproblemer">
 					<img src="" alt="">
-						<h2 class="fodproblemer">Fodproblemer</h2>
+						<h2 class="fodproblemer">Info om fødder og fodsygdomme</h2>
 						<p></p>
-						<button></button>
+						<button>Se mere</button>
 					</div>
 					<div id="om_klinikken">
 					<img src="" alt="">
 						<h2 class="om_klinikken">Om klinikken</h2>
 						<p></p>
-						<button></button>
+						<button>Se mere</button>
 					</div>
 					
 				</div>
 
 				<div class="section_one_container_two">
 					<img src="" alt="">
-					<h2 class="statsautoriseret_fodterapeut"></h2>
-					<p></p>
-					<h2 class="statsautoriseret_fodterapeut_two"></h2>
-					<p></p>
+					<h2 class="statsautoriseret_fodterapeut">Statsautoriseret fodterapeut</h2>
+					<p>Indsæt spændende lang tekst lol</p>
+					<h2 class="statsautoriseret_fodterapeut_two">Hvem har brug for en fodterapeut?</h2>
+					<p>Mere spændende lang tekst - dobbelt lol</p>
 				</div>
 
 			</div>
 
 			<div id="section_two">
 				<div class="section_two_container_one">
-				<h2 class="bliv_ringet_op">Bliv ringet op</h2>
-					<p></p>
-					<p></p>
+				<h2 class="bliv_kontaktet">Bliv kontaktet</h2>
+					<p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til at blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
+					<p>Hvordan vil du kontaktes?</p>
 					<form>
 					<input type="checkbox">
 					<label>Ring mig op</label>
@@ -64,22 +64,41 @@ get_header();
 				</div>
 
 				<div id="section_two_container_two">
-					<input type="text">
+					<input type="tel">
+					<input type="email">
+				</div>
+
+				<div id="section_two_container_three">
+					<textarea name="besked" rows="10"></textares>
+					<button>Send</button>
+					<p>OBS. Jeg bestræber mig på at vende tilbage inden 24 timer.</p>
 				</div>
 				</form>	
-
 			</div>
 
 			<div id="section_three">
 				<div class="section_three_container_one">
-
+					<div id="map"></div>
+					<h2 class="adresse">Adresse</h2>
+					<p>Vandtårnsvej 62A, 
+						2860 Søborg
+					</p>
+					<h2 class="aabningstider">Åbningstider</h2>
+					<p>Mandag - fredag: Efter aftale
+						Lørdag - søndag: Lukket
+					</p>
 				</div>
 
 			</div>
 
 			<div id="section_four">
 				<div class="section_four_container_one">
-
+					<img src="" alt="">
+					<p>+45 2014 4866</p>
+					<img src="" alt="">
+					<p>fornyedefoedder@gmail.com</p>
+					<img src="" alt="">
+					<p>fornyedefødder</p>
 				</div>
 			</div>
 
