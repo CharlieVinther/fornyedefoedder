@@ -16,7 +16,7 @@ get_header();
     <main id="main" class="site-main">
 
         <div id="section_one">
-            <div id="index_section_one" class="section_one_container_one">
+            <div id="index_section_one" class="container">
                 <div id="behandlinger">
                     <img src="" alt="">
                     <h2 class="behandlinger">Behandlinger og priser</h2>
@@ -39,7 +39,7 @@ get_header();
 
             </div>
 
-            <div class="section_one_container_two">
+            <div class="container">
                 <img src="" alt="">
                 <h2 class="statsautoriseret_fodterapeut">Statsautoriseret fodterapeut</h2>
                 <p>Indsæt spændende lang tekst lol</p>
@@ -50,7 +50,7 @@ get_header();
         </div>
 
         <div id="section_two">
-            <div class="section_two_container_one">
+            <div class="container">
                 <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
                 <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til at
                     blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
@@ -64,7 +64,7 @@ get_header();
                     <label>E-mail</label>
             </div>
 
-            <div id="section_two_container_two">
+            <div class="container">
                 <input type="tel">
                 <input type="email">
             </div>
@@ -78,7 +78,7 @@ get_header();
 			</div>
 
 			<div id="section_three">
-				<div class="section_three_container_one">
+				<div class="container">
 					<div id="map"></div>
 					<h2 class="adresse">Adresse</h2>
 					<p>Vandtårnsvej 62A, 
@@ -93,7 +93,7 @@ get_header();
 			</div>
 
 			<div id="section_four">
-				<div class="section_four_container_one">
+				<div class="container">
 					<img src="" alt="">
 					<p>+45 2014 4866</p>
 					<img src="" alt="">
