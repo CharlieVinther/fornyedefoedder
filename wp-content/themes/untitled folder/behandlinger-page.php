@@ -16,7 +16,33 @@ get_header();
 		<main id="main" class="site-main">
 
 			<div id="main_container">
-			<section id="first_section"></section>
+				<section id="first_section">
+					<div id="behandling_container"></div>
+					<div id="behandling_text_container">
+						<h2>Tilskud og henvisning</h2>
+						<p>Patienter har følgende tildkudsmuligheder</p>
+						<a href=""></a>
+						<a href=""></a>
+						<a href=""></a>
+						<p>Du er velkommen til at <a href="">kontakte</a> mig ved yderligere spørgsmål.</p>
+					</div>
+				</section>
+				<section id="second_section">
+					<h2>Infor om fødder og fodsygdomme</h2>
+				</section>
+				<section id="third_section">
+					<div id="formular_img_container"></div>
+					<div id="formular_container">
+						<form action="#" id="behandling">
+							<input type="checkbox">
+							<label for=""></label>
+						</form>
+					</div>
+				</section>
+				<section id="fourth_section">
+					<div id="kontakt_container"></div>
+				</section>
+
 			</div>
 
 		</main><!-- #main -->
