@@ -70,7 +70,7 @@ get_header();
             </div>
 
             <div id="section_two_container_three">
-                <textarea name="besked" rows="10"></textare>
+                <textarea name="besked" rows="10"></textarea>
 					<button>Send</button>
 					<p>OBS. Jeg bestræber mig på at vende tilbage inden 24 timer.</p>
 				</div>
