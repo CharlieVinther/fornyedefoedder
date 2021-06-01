@@ -118,8 +118,6 @@ get_header();
                     const dest = document.querySelector("#produkt_container");
                     const temp = document.querySelector("template").content;
 
-                    dest.textContent = "";
-
                     produkter.forEach(produkt => {
                         console.log("forEachProdukter");
 
