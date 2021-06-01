@@ -72,6 +72,68 @@ get_header();
         </div>
 
     </main><!-- #main -->
+    <template>
+        <h3 id="navn"></h3>
+        <p id="pris"> DKK</p>
+
+    </template>
+
+    <script>
+        let behandlinger;
+        let categories;
+
+        const url = "http://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/behandling?per_page=100";
+
+        console.log("behandlinger");
+
+        document.addEventListners("DOMContentLoaded", start);
+
+        function start() {
+            console.log("start");
+            
+            hentData();
+        }
+    
+        function hentData () {
+            const respons = await fetch(url);
+            behandlinger = await respons.json();
+
+            console.log(behandlinger);
+
+            visBehandlinger();
+        }
+
+        function visBehandlinger() {
+            const dest = document.querySelector("#behandlinger_container");
+            const temp = document.querySelector("template")
+
+            behandlinger.forEach(e => {
+                console.log("forEachBehandlinger");
+
+                const klon = temp.cloneNode(true);
+
+                klon.querySelector(".navn").textContent = e.navn;
+                klon.querySelector(".pris").textContent = e.pris + " DKK";
+
+                dest.appendChild(klon);
+
+
+
+            });
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
 </div><!-- #primary -->
 
 <?php
