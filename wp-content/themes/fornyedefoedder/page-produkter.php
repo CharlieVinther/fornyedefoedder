@@ -38,6 +38,8 @@ get_header();
              </nav>
             </section>
 
+            <section id="produktliste"></section>
+
 
             <section id="third_section">
                 <article class="fodproblemer"></article>
@@ -115,7 +117,7 @@ get_header();
                 function visProdukter() {
                     console.log("visProdukter");
 
-                    const dest = document.querySelector("#produkt_container");
+                    const dest = document.querySelector("#produktliste");
                     const temp = document.querySelector("template").content;
 
                     produkter.forEach(produkt => {
