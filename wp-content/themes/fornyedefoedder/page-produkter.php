@@ -81,12 +81,6 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                     hentData();
                 }
 
-                function start() {
-                    console.log("start");
-
-                    hentData();
-                }
-
                 async function hentData() {
                     const respons = await fetch(url);
                     const catrespons = await fetch(caturl);

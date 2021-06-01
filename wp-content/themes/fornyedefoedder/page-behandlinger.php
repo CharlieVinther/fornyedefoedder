@@ -104,7 +104,7 @@ get_header();
         }
 
         function visBehandlinger() {
-            const dest = document.querySelector("#behandlinger_container");
+            const dest = document.querySelector("#behandling_container");
             const temp = document.querySelector("template").content;
 
             behandlinger.forEach(e => {
