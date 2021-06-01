@@ -27,14 +27,6 @@ get_header();
                 <h2 class="produkter">Produkter</h2>
                 <nav id="filtrering">
                  <button data-produkter="alle" class="valgt">Alle produkter</button>
-                 <button data-produkter="eksem-og-saar" class="eksem-og-saar">Eksem og sår</button>
-                 <button data-produkter="haelerevner" class="haelerevner">Hælerevner</button>
-                 <button data-produkter="svamp" class="svamp">Problemer med svamp</button>
-                 <button data-produkter="psoriasis" class="psoriasis">Psoriasis</button>
-                 <button data-produkter="sportsudoevere" class="sportsudoevere">Til sportsudøvere</button>
-                 <button data-produkter="sved-og-lugt" class="sved-og-lugt">Sved og lugt</button>
-                 <button data-produkter="toerhud" class="toerhud">Tør hud</button>
-                 <button data-produkter="tyndhud" class="tyndhud">Tynd hud</button>
              </nav>
             </section>
 
