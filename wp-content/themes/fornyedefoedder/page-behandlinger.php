@@ -105,7 +105,7 @@ get_header();
 
         function visBehandlinger() {
             const dest = document.querySelector("#behandlinger_container");
-            const temp = document.querySelector("template")
+            const temp = document.querySelector("template").content;
 
             behandlinger.forEach(e => {
                 console.log("forEachBehandlinger");
