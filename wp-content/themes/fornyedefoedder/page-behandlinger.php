@@ -94,7 +94,7 @@ get_header();
             hentData();
         }
     
-        function hentData () {
+        async function hentData () {
             const respons = await fetch(url);
             behandlinger = await respons.json();
 
