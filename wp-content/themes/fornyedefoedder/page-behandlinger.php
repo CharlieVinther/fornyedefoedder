@@ -86,7 +86,7 @@ get_header();
 
         console.log("behandlinger");
 
-        document.addEventListners("DOMContentLoaded", start);
+        document.addEventListener("DOMContentLoaded", start);
 
         function start() {
             console.log("start");
