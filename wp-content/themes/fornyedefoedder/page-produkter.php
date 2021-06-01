@@ -131,8 +131,8 @@ get_header();
                             const klon = temp.cloneNode(true);
 
                             // klon.querySelector(".produktbillede").src = produkt.image.guid; //
-                            klon.querySelector(".navn").textContent = navn.produkt;
-                            klon.querySelector(".size").textContent =  size.produkt;
+                            klon.querySelector(".navn").textContent = produkt.navn;
+                            klon.querySelector(".size").textContent = produkt.size;
                             
 
                             klon.querySelector(".produkt_container").addEventListener("click", () => location.href = produkter.link);
