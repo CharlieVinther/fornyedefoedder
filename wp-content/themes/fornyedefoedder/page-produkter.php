@@ -135,7 +135,7 @@ get_header();
                             klon.querySelector(".size").textContent = produkt.size;
                             
 
-                            klon.querySelector(".produkt_container").addEventListener("click", () => location.href = produkter.link);
+                            klon.querySelector("#produkt_container").addEventListener("click", () => location.href = produkt.link);
 
                             dest.appendChild(klon);
                             //klon.querySelector("").
