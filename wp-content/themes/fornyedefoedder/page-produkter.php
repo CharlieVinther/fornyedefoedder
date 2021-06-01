@@ -124,15 +124,15 @@ get_header();
                         console.log("forEachProdukter");
 
 
-                        if (filter == "alle" || produkter.categories.includes(parseInt(filter))) {
+                        if (filter == "alle" || produkt.categories.includes(parseInt(filter))) {
 
                             console.log("IF");
 
                             const klon = temp.cloneNode(true);
 
-                            klon.querySelector(".produktbillede").src = produkter.image.guid;
-                            klon.querySelector(".navn").textContent = navn.rendered;
-                            klon.querySelector(".size").textContent =  size.produkter;
+                            klon.querySelector(".produktbillede").src = produkt.image.guid;
+                            klon.querySelector(".navn").textContent = navn.produkt;
+                            klon.querySelector(".size").textContent =  size.produkt;
                             
 
                             klon.querySelector(".produkt_container").addEventListener("click", () => location.href = produkter.link);
