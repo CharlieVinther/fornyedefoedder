@@ -25,7 +25,7 @@ get_header();
 
             <section id="second_section">
                 <h2 class="produkter">Produkter</h2>
-                <nav class="filtrering">
+                <nav id="filtrering">
                  <button data-produkter="alle" class="valgt">Alle produkter</button>
                  <button data-produkter="eksem-og-saar" class="eksem-og-saar">Eksem og sår</button>
                  <button data-produkter="haelerevner" class="haelerevner">Hælerevner</button>
