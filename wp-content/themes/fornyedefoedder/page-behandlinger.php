@@ -112,7 +112,7 @@ get_header();
 
                 const klon = temp.cloneNode(true);
 
-                klon.querySelector(".navn").textContent = e.navn;
+                klon.querySelector(".navn").innerHTML = e.navn;
                 klon.querySelector(".pris").textContent = e.pris;
 
                 dest.appendChild(klon);
