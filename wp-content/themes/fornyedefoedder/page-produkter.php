@@ -48,7 +48,7 @@ get_header();
     </main><!-- #main -->
 
     <template>
-                <article class="produkt_container">
+                <article id="produkt_container">
                     <img src="" alt="" class="produktbillede">
                     <h3 class="navn"></h3>
                     <p class="size"></p>
@@ -115,7 +115,7 @@ get_header();
                 function visProdukter() {
                     console.log("visProdukter");
 
-                    const dest = document.querySelector("#grid_container_podcast");
+                    const dest = document.querySelector("#produkt_container");
                     const temp = document.querySelector("template").content;
 
                     dest.textContent = "";
