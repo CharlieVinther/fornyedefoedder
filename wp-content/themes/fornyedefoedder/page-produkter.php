@@ -131,7 +131,7 @@ get_header();
                             const klon = temp.cloneNode(true);
 
                             klon.querySelector(".produktbillede").src = produkter.image.guid;
-                            klon.querySelector(".navn").textContent = navn.title.rendered;
+                            klon.querySelector(".navn").textContent = navn.rendered;
                             klon.querySelector(".size").textContent =  size.produkter;
                             
 
