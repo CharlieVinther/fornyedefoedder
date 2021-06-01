@@ -113,7 +113,7 @@ get_header();
                 const klon = temp.cloneNode(true);
 
                 klon.querySelector(".navn").innerHTML = e.navn;
-                klon.querySelector(".pris").textContent = e.pris;
+                klon.querySelector(".pris").textContent = e.pris + " DKK";
 
                 dest.appendChild(klon);
 
