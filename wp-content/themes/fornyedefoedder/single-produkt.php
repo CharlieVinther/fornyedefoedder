@@ -75,7 +75,7 @@ get_header();
 
             function visProdukt() {
                 console.log("visProdukt");
-                document.querySelector(".billede").src = produkt.image.guid;
+                //document.querySelector(".billede").src = produkt.image.guid;
                 document.querySelector(".navn").innerHTML = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
                 document.querySelector(".brandlogo").src = produkt.image.guid;
