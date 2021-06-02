@@ -20,7 +20,7 @@ get_header();
                 <div id="behandling_container">
                 
                     <div id="Fodbehandlinger_container">
-                    <p>Fodbehandlinger</p></div>
+                    </div>
                     
                     <div id="Neglebehandlinger_container">
                     <p>Neglebehandlinger</p></div>
