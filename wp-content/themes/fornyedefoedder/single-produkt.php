@@ -66,7 +66,7 @@ get_header();
                 produkt = await data.json();
 
                 
-                visProdukt();
+                hentData();
                 
                 
             }
