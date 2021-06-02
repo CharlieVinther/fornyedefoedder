@@ -118,10 +118,14 @@ get_header();
                 console.log("produkt", produktInfo.link);
                 container.appendChild(klon);
 
+            }
+        
+
 
 
             </script>
-	</div><!-- #primary -->
+	</div>
+    <!-- #primary -->
 
 <?php
 get_footer();
