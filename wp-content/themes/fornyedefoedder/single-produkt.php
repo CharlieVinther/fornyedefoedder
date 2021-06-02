@@ -87,7 +87,7 @@ get_header();
                 //document.querySelector(".billede").src = produkt.image.guid;
                 document.querySelector(".navn").textContent = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
-                document.querySelector(".brandlogo").src = produkt.image.guid;
+                //document.querySelector(".brandlogo").src = produkt.image.guid;
 
                 produkter.forEach(lignende => {
                         console.log("forEachProdukt");
