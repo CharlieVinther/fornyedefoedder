@@ -17,7 +17,13 @@ get_header();
 
         <div id="main_container">
             <section id="first_section">
-                <div id="behandling_container"></div>
+                <div id="behandling_container">
+                    <div id="Fodbehandlinger_container"></div>
+                    <div id="Neglebehandlinger_container"></div>
+                    <div id="Gebyr_container"></div>
+                    <div id="Saar_container"></div>
+                    <div id="Indlaeg_container"></div>
+                </div>
                 <div id="behandling_text_container">
                     <h2>Tilskud og henvisning</h2>
                     <p>Patienter har følgende tildkudsmuligheder</p>
@@ -80,7 +86,7 @@ get_header();
 
     <script>
         let behandlinger;
-        let categories;
+        let cat;
 
         const url = "http://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/behandling?per_page=100";
 
@@ -104,7 +110,7 @@ get_header();
         }
 
         function visBehandlinger() {
-            const dest = document.querySelector("#behandlinger_container");
+            
             const temp = document.querySelector("template")
 
             behandlinger.forEach(e => {
@@ -112,8 +118,13 @@ get_header();
 
                 const klon = temp.cloneNode(true);
 
+                cat = e.kategori;
+                let dest = document.querySelector("#" + cat + "_container");
+
                 klon.querySelector(".navn").textContent = e.navn;
                 klon.querySelector(".pris").textContent = e.pris + " DKK";
+
+                console.log(dest);
 
                 dest.appendChild(klon);
 
