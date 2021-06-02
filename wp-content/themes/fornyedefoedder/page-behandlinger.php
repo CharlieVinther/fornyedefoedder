@@ -61,18 +61,6 @@ udeblivelse, tager jeg et gebyr på 250 kr.</p>
 			</div>
 		</div>
             </section>
-            <section id="fourth_section">
-                <div id="kontakt_container">
-                    <img src="" alt="">
-                    <p>+45 2014 4866</p>
-                    <img src="" alt="">
-                    <p>fornyedefoedder@gmail.com</p>
-                    <img src="" alt="">
-                    <p>fornyedefødder</p>
-                </div>
-            </section>
-
-        </div>
 
     </main><!-- #main -->
     <template>
