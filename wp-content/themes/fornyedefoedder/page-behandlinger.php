@@ -39,7 +39,7 @@ get_header();
             <section id="third_section">
                 <div id="formular_img_container"></div>
                 <div id="formular_container">
-                    <div class="section_two_container_one">
+                    <div id="formular" class="container">
                         <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
                         <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til
                             at blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
