@@ -18,11 +18,18 @@ get_header();
         <div id="main_container">
             <section id="first_section">
                 <div id="behandling_container">
+                <h2>Fodbehandlinger</h2>
                     <div id="Fodbehandlinger_container"></div>
+                    <h2>Neglebehandlinger</h2>
                     <div id="Neglebehandlinger_container"></div>
+                    <h2>Andre tillæg og gebyrer</h2>
                     <div id="Gebyr_container"></div>
+                    <h2>Sårbehandlinger</h2>
                     <div id="Saar_container"></div>
+                    <h2>Indlægssåler</h2>
                     <div id="Indlaeg_container"></div>
+                    <p>Afbud skal ske senest 24 timer før din tid, ved senere afbud eller
+udeblivelse, tager jeg et gebyr på 250 kr.</p>
                 </div>
                 <div id="behandling_text_container">
                     <h2>Tilskud og henvisning</h2>
