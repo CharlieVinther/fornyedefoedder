@@ -69,13 +69,12 @@ get_header();
                 console.log("produkt: ", produkter);
 
                 visProdukt();
-                getProdukter();
+                //getProdukter();
                 //visProdukter();
             }
 
             function visProdukt() {
                 console.log("visProdukt");
-                console.log(produkt.navn);
                 document.querySelector(".billede").src = produkt.image.guid;
                 document.querySelector(".navn").innerHTML = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
@@ -83,42 +82,42 @@ get_header();
                 
             }
 
-            async function getProdukter() {
-                let produktForhold = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt/";
+            //async function getProdukter() {
+                //let produktForhold = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt/";
 
 
-                produkt.produkter.forEach(async produkterne => {
-                    let data3 = "data" + produkterne;
-                    data3 = await fetch(produktForhold + produkterne);
-                    produktInfo = await data3.json();
+                //produkt.produkter.forEach(async produkterne => {
+                    //let data3 = "data" + produkterne;
+                    //data3 = await fetch(produktForhold + produkterne);
+                    //produktInfo = await data3.json();
 
-                    console.log(produktInfo);
-                    visProdukter();
-
-
-                })
+                    //console.log(produktInfo);
+                    //visProdukter();
 
 
-            }
+                //})
 
-            function visProdukter() {
-                console.log("visProdukter");
-                let temp = document.querySelector("template");
-                let klon = temp.cloneNode(true).content;
 
-                console.log("loop id :", aktueltProdukt);
+           // }
 
-                klon.querySelector(".navn").innerHTML = episodeInfo.title.rendered;
-                document.querySelector(".billede").src = produkt.image.guid;
+            // function visProdukter() {
+            //     console.log("visProdukter");
+            //     let temp = document.querySelector("template");
+            //     let klon = temp.cloneNode(true).content;
 
-                klon.querySelector("article").addEventListener("click", () => {
-                    location.href = produktInfo.link;
-                });
-                klon.querySelector("a").href = produktInfo.link;
-                console.log("produkt", produktInfo.link);
-                container.appendChild(klon);
+            //     console.log("loop id :", aktueltProdukt);
 
-            }
+            //     klon.querySelector(".navn").innerHTML = episodeInfo.title.rendered;
+            //     document.querySelector(".billede").src = produkt.image.guid;
+
+            //     klon.querySelector("article").addEventListener("click", () => {
+            //         location.href = produktInfo.link;
+            //     });
+            //     klon.querySelector("a").href = produktInfo.link;
+            //     console.log("produkt", produktInfo.link);
+            //     container.appendChild(klon);
+
+            // }
         
 
 
