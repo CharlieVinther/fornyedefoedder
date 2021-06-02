@@ -22,16 +22,16 @@ get_header();
                     <div id="Fodbehandlinger_container">
                     </div>
                     
-                    <div id="Neglebehandlinger_container">
-                    <p>Neglebehandlinger</p></div>
+                    <div id="Neglebehandlinger_container"></div>
                     
-                    <div id="Gebyr_container">
-                    <p>Andre tillæg og gebyrer</p></div>
                     
-                    <div id="Saar_container">
-                        <p>Sårbehandlinger</p></div>
+                    <div id="Gebyr_container"></div>
                     
-                    <div id="Indlaeg_container"><p>Indlægssåler</p></div>
+                    
+                    <div id="Saar_container"></div>
+                       
+                    
+                    <div id="Indlaeg_container"></div>
                     <p>Afbud skal ske senest 24 timer før din tid, ved senere afbud eller
 udeblivelse, tager jeg et gebyr på 250 kr.</p>
                 </div>
