@@ -26,8 +26,10 @@ get_header();
            </div>
            </article></section>
 		<template>    
+            <article id="lignende_container">
             <h2 class="lignendenavn"></h2>
             <p class="lignendesize"></p>
+            </article>
            </template>
 
            <section id="second_section" class="single-produkt">
@@ -101,11 +103,11 @@ get_header();
                             const klon = temp.cloneNode(true);
 
                             // klon.querySelector(".produktbillede").src = produkt.image.guid; //
-                            klon.querySelector(".lignendenavn").textContent = produkt.navn;
-                            klon.querySelector(".lignendesize").textContent = produkt.size;
+                            klon.querySelector(".lignendenavn").textContent = lignende.navn;
+                            klon.querySelector(".lignendesize").textContent = lignende.size;
                             
 
-                            klon.querySelector("#produkt_container").addEventListener("click", () => location.href = produkt.link);
+                            klon.querySelector("#lignende_container").addEventListener("click", () => location.href = lignende.link);
 
                             dest.appendChild(klon);
                             //klon.querySelector("").
