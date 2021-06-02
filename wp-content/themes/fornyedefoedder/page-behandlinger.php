@@ -20,16 +20,16 @@ get_header();
                 <div id="behandling_container">
                 
                     <div id="Fodbehandlinger_container">
-                    <h2>Fodbehandlinger</h2></div>
+                    <h3>Fodbehandlinger</h3></div>
                     
                     <div id="Neglebehandlinger_container">
-                    <h2>Neglebehandlinger</h2></div>
+                    <h3>Neglebehandlinger</h3></div>
                     
                     <div id="Gebyr_container">
-                    <h2>Andre tillæg og gebyrer</h2></div>
+                    <h3>Andre tillæg og gebyrer</h3></div>
                     
-                    <div id="Saar_container"><
-                        <h2>Sårbehandlinger</h2></div>
+                    <div id="Saar_container">
+                        <h3>Sårbehandlinger</h3></div>
                     
                     <div id="Indlaeg_container"><h2>Indlægssåler</h2></div>
                     <p>Afbud skal ske senest 24 timer før din tid, ved senere afbud eller
