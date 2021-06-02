@@ -37,32 +37,18 @@ get_header();
                 <h2>Info om fødder og fodsygdomme</h2>
             </section>
             <section id="third_section">
-                <div id="formular_img_container"></div>
-                <div id="formular_container">
-                    <div id="formular" class="container">
-                        <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
-                        <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til
-                            at blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
-                        <p>Hvordan vil du kontaktes?</p>
-                        <form>
-                            <input type="checkbox">
-                            <label>Ring mig op</label>
-                            <input type="checkbox">
-                            <label>SMS</label>
-                            <input type="checkbox">
-                            <label>E-mail</label>
-                    </div>
-                    <div id="section_two_container_two" class="container">
-                        <input type="tel">
-                        <input type="email">
-                    </div>
-                    <div id="section_two_container_three">
-                        <textarea name="besked" rows="10"></textarea>
-                        <button>Send</button>
-                        <p>OBS. Jeg bestræber mig på at vende tilbage inden 24 timer.</p>
-                    </div>
-                    </form>
-                </div>
+            <div id="formular">
+            <div class="container">
+                <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
+                <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til at
+                    blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
+
+			<?php echo do_shortcode( '[wpforms id="283"]' ); ?>
+				<p>
+					Jeg bestræber efter at vende tilbage inden 24 timer
+				</p>
+			</div>
+		</div>
             </section>
             <section id="fourth_section">
                 <div id="kontakt_container">
