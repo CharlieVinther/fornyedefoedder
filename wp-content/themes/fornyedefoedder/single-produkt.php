@@ -14,9 +14,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
+        <section id="produkt"></section>
 		<template>    
-            <article>
+            <article id="produkt_container">
             <div>
            <section id="first_section" class="single-produkt">
            <img src="" alt="" class="billede">
@@ -75,6 +75,9 @@ get_header();
 
             function visProdukt() {
                 console.log("visProdukt");
+
+                const dest = document.querySelector("#produkt");
+                    const temp = document.querySelector("template").content;
                 //document.querySelector(".billede").src = produkt.image.guid;
                 document.querySelector(".navn").textContent = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
