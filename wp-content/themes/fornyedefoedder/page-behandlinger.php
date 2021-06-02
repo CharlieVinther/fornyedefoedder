@@ -52,7 +52,7 @@ get_header();
                             <input type="checkbox">
                             <label>E-mail</label>
                     </div>
-                    <div id="section_two_container_two">
+                    <div id="section_two_container_two" class="container">
                         <input type="tel">
                         <input type="email">
                     </div>
