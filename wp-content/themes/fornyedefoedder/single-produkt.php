@@ -14,9 +14,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-        <section id="produkt"></section>
-		<template>    
-            <article id="produkt_container">
+        <section id="produkt">
+        <article id="produkt_container">
             <div>
            <section id="first_section" class="single-produkt">
            <img src="" alt="" class="billede">
@@ -25,7 +24,10 @@ get_header();
            <img src="" alt="" class="brandlogo">
            </section>
            </div>
-           </article>
+           </article></section>
+		<template>    
+            <h2 class="lignendenavn"></h2>
+            <p class="lignendesize"></p>
            </template>
 
            <section id="second_section" class="single-produkt">
@@ -38,9 +40,8 @@ get_header();
 
         <script>
             let produkt;
-            
+            let produkter;
             let aktueltProdukt = <?php echo get_the_ID() ?>;
-            let produktInfo;
 
 
             const dbUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt/" + aktueltProdukt;
@@ -62,65 +63,55 @@ get_header();
 
             async function getJSON() {
                 const data = await fetch(dbUrl);
-                podcast = await data.json();
+                produkt = await data.json();
 
-                const data2 = await fetch(produktUrl);
-                produkter = await data2.json();
-                console.log("produkt: ", produkter);
-
+                
                 visProdukt();
-                //getProdukter();
-                //visProdukter();
+                
+                
             }
+
+            async function hentData() {
+                    const respons = await fetch(url);
+                  
+                    produkter = await respons.json();
+                    
+                    console.log(produkter);
+                    visProdukt();
+                    
+                }
+
 
             function visProdukt() {
                 console.log("visProdukt");
-
-                const dest = document.querySelector("#produkt");
-                    const temp = document.querySelector("template").content;
                 //document.querySelector(".billede").src = produkt.image.guid;
                 document.querySelector(".navn").textContent = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
                 document.querySelector(".brandlogo").src = produkt.image.guid;
-                
-            }
 
-            //async function getProdukter() {
-                //let produktForhold = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt/";
+                produkter.forEach(lignende => {
+                        console.log("forEachProdukt");
 
 
-                //produkt.produkter.forEach(async produkterne => {
-                    //let data3 = "data" + produkterne;
-                    //data3 = await fetch(produktForhold + produkterne);
-                    //produktInfo = await data3.json();
+                        if (lignende.categories.includes(parseInt(produkt.categories))) {
 
-                    //console.log(produktInfo);
-                    //visProdukter();
+                            console.log("IF");
+
+                            const klon = temp.cloneNode(true);
+
+                            // klon.querySelector(".produktbillede").src = produkt.image.guid; //
+                            klon.querySelector(".lignendenavn").textContent = produkt.navn;
+                            klon.querySelector(".lignenesize").textContent = produkt.size;
+                            
+
+                            klon.querySelector("#produkt_container").addEventListener("click", () => location.href = produkt.link);
+
+                            dest.appendChild(klon);
+                            //klon.querySelector("").
+                        }
+           }
 
 
-                //})
-
-
-           // }
-
-            // function visProdukter() {
-            //     console.log("visProdukter");
-            //     let temp = document.querySelector("template");
-            //     let klon = temp.cloneNode(true).content;
-
-            //     console.log("loop id :", aktueltProdukt);
-
-            //     klon.querySelector(".navn").innerHTML = episodeInfo.title.rendered;
-            //     document.querySelector(".billede").src = produkt.image.guid;
-
-            //     klon.querySelector("article").addEventListener("click", () => {
-            //         location.href = produktInfo.link;
-            //     });
-            //     klon.querySelector("a").href = produktInfo.link;
-            //     console.log("produkt", produktInfo.link);
-            //     container.appendChild(klon);
-
-            // }
         
 
 
