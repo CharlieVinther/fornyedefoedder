@@ -102,7 +102,7 @@ get_header();
 
                             // klon.querySelector(".produktbillede").src = produkt.image.guid; //
                             klon.querySelector(".lignendenavn").textContent = produkt.navn;
-                            klon.querySelector(".lignenesize").textContent = produkt.size;
+                            klon.querySelector(".lignendesize").textContent = produkt.size;
                             
 
                             klon.querySelector("#produkt_container").addEventListener("click", () => location.href = produkt.link);
