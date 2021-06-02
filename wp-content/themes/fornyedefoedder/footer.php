@@ -16,37 +16,69 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
-				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .footer-navigation -->
-			<?php endif; ?>
-		</div><!-- .site-info -->
+		<div id="footer_one">
+			<div class="container">
+				<div class="col">
+
+				<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/tlf.svg" alt="tlf ikon">
+					<p>+45 2014 4866</p>
+					</div>
+				<div class="col">
+					<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/mail.svg" alt="mail ikon">
+					<p>fornyedefoedder@gmail.com</p>
+					</div>
+					<div class="col">
+					<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/facebook.svg" alt="facebook ikon">
+					<p>fornyedefødder</p>
+						</div>
+			</div>
+		</div>
+
+		<div id="footer_two">
+
+		<div class="container">
+			<div class="col">
+				<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/stats-logo-hvid.svg" alt="statsautoriseret fodterapeut">
+				<p>
+					Fornyede Fødder v/ Stine Stubtoft
+				</p>
+			</div>
+			<div class="col">
+				<h3>
+					Menu
+					<ul>
+						<li><a href="http://charlievinther.dk/fornyedefoedder/info/">Info om fødder</a></li>
+						<li><a href="http://charlievinther.dk/fornyedefoedder/behandlinger/">Behandlinger</a></li>
+						<li><a href="http://charlievinther.dk/fornyedefoedder/produkter/">Produkter</a></li>
+						<li><a href="http://charlievinther.dk/fornyedefoedder/klinikken/">Om klinikken</a></li>
+						<li><a href="http://charlievinther.dk/fornyedefoedder/bestiltid/">Bestil tid</a></li>
+					</ul>
+				</h3>
+
+			</div>
+			<div class="col">
+				<h3>
+					Åbningstider
+					<ul>
+						<li>Mandag - fredag: Efter aftale</li>
+						<li>Lørdag - søndag: Lukket</li>
+					</ul>
+				</h3>
+			</div>
+			<div class="col">
+				<h3>
+					Fornyede Fødder
+					<ul>
+						<li>Vandtårnsvej 62A, 1. sal E. nr. 3 2860 Søborg </li>
+						<br/>
+						<li>Tlf: +45 2014 4866</li>
+						<li>Mail: fornyedefodder@gmail.com</li>
+					</ul>
+				</h3>
+
+			</div>
+		</div>
+			</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
