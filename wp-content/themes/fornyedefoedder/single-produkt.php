@@ -72,7 +72,7 @@ get_header();
             }
 
             async function hentData() {
-                    const respons = await fetch(url);
+                    const respons = await fetch(dbUrl);
                   
                     produkter = await respons.json();
                     
