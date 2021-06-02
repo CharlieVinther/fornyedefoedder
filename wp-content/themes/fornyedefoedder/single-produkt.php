@@ -91,7 +91,8 @@ get_header();
 
                 produkter.forEach(lignende => {
                         console.log("forEachProdukt");
-
+                        const dest = document.querySelector("#second_section");
+                    const temp = document.querySelector("template").content;
 
                         if (lignende.categories.includes(parseInt(produkt.categories))) {
 
