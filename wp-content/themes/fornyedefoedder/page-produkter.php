@@ -28,18 +28,22 @@ get_header();
             </section>
 
             <section id="second_section">
+            <div class="container">
                 <nav id="filtrering">
                  <button data-produkter="alle" class="valgt">Alle produkter</button>
              </nav>
+             </div>
             </section>
 
             <section id="produktliste"></section>
 
 
             <section id="third_section">
+            <div class="container">
                 <img src="" alt="" class="billede">
                 <h2 class="billedetitel"></h2>
                 <p class="billedetekst"></p>
+                </div>
                 </section>
 
                 <section id="section_four" class="grid"> 
