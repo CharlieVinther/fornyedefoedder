@@ -60,7 +60,7 @@ nedgroede negle og arvæv. </p>
 Jeg er underlagt Styrelsen for patientsikkerhed og har journalpligt.
 Det betyder også at jeg som andre behandlere indenfor sundhedssektoren har
 tavshedspligt.</p>
-                <h2 class="statsautoriseret_fodterapeut_two">Hvem har brug for en fodterapeut?</h2>
+                <h2 class="statsautoriseret_fodterapeut_two parallax">Hvem har brug for en fodterapeut?</h2>
                 <p>Alle kan have brug for en fodterapeut, uanset alder og køn. Nogle går til
 fodterapeut af ren velvære og forebyggelse.
 Nogle patientgrupper som f.eks. diabetes- og gigtpatienter
@@ -70,8 +70,8 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 
         </div>
 
-        <div id="formular">
-			<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/fod.jpg" id="parallax" data-rellax-speed="-4">
+        <div id="formular" >
+			<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/fod.jpg" class="rellax" data-rellax-speed="-4">
 
 
             <div class="container">
@@ -110,19 +110,16 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 
 
 		</main><!-- #main -->
-
 	<script>
-		var rellax = new Rellax('#parallax');
-		var formularbaggrund = document.getElementById("parallax");
-		formularbaggrund.addEventListener("scroll", parallaxBg);
 
-		function parallaxBg(){
-			console.log("parallax");
-			let formularBg = document.getElementById("parallax");
-								var value = window.scrollY;
-			formularBg.style.top = value + 0.2 + "px";
 
-								};
+
+var rellax = new Rellax('.rellax',{
+					wrapper = document.	});
+
+
+
+
 
 	</script>
 
