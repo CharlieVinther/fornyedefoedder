@@ -38,8 +38,9 @@ get_header();
         <section id="second_section" class="single-produkt">
        
         <div id="lignendeliste" class="container">
-        <div class="grid">
+        
         <h2 class="lignendeprodukter">Lignende produkter</h2>
+        <div class="grid">
             </div>
             </div>
         </section>
