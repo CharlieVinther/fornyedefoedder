@@ -50,7 +50,7 @@ fodterapeut før skaden er sket.
 Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have
 – information generelt om fødder og fodsygdomme.</p>
                 <button class="se_mere">Se mere</button>
-                <img src="" alt="" class="infografik">
+                <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/infografik.png" alt="" class="infografik">
                 </section>
 
     </main><!-- #main -->
