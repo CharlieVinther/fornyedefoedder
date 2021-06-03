@@ -27,6 +27,7 @@ get_header();
            </article></section>
 		<template>    
             <article id="lignende_container">
+            <img src="" alt="" class="produktbillede">
             <h2 class="lignendenavn"></h2>
             <p class="lignendesize"></p>
             </article>
