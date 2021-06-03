@@ -13,7 +13,7 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main container">
+    <main id="main" class="site-main">
         <section id="first_section" class="single-produkt container">
             <article id="produkt_container_single">
                     <div class="col">
@@ -34,7 +34,7 @@ get_header();
         </template>
         
         <section id="second_section" class="single-produkt">
-        <div class="container">
+        <div id="lignendeliste" class="container">
             <h2>Lignende produkter</h2>
             </div>
         </section>
@@ -96,7 +96,7 @@ get_header();
 
         produkter.forEach(lignende => {
             console.log("forEachProdukt");
-            const dest = document.querySelector("#second_section");
+            const dest = document.querySelector("#lignendeliste");
             const temp = document.querySelector("template").content;
 
             if (lignende.id != produkt.id && lignende.categories.includes(parseInt(produkt.categories))) {
