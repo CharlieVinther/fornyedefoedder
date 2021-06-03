@@ -28,8 +28,10 @@ get_header();
         <template>
             <article id="lignende_container">
                 <img src="" alt="" class="produktbillede">
+                <div class="col">
                 <h2 class="lignendenavn"></h2>
                 <p class="lignendesize"></p>
+                </div>
             </article>
         </template>
         
