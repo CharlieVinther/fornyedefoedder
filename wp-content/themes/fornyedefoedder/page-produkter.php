@@ -16,6 +16,10 @@ get_header();
     <main id="main" class="site-main produkter">
 
         <div id="main_container">
+
+        <section id="splash_section">
+        <h1>Produkter</h1>
+        </section>
             <section id="first_section">
             <div class="container">
                 <article> 
