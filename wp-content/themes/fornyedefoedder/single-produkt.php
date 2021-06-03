@@ -14,7 +14,7 @@ get_header();
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main container">
-        <section id="first_section" class="single-produkt">
+        <section id="first_section" class="single-produkt container">
             <article id="produkt_container">
                     <div class="col">
                         <img src="" alt="" class="billede">
