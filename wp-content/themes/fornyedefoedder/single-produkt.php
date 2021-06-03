@@ -32,13 +32,13 @@ get_header();
                 <p class="lignendesize"></p>
             </article>
         </template>
-        <div class="container">
+        
         <section id="second_section" class="single-produkt">
         
             <h2>Lignende produkter</h2>
            
         </section>
-        </div>
+   
     </main><!-- #main -->
 
 
