@@ -36,7 +36,7 @@ get_header();
         </template>
         
         <section id="second_section" class="single-produkt">
-        <h2>Lignende produkter</h2>
+        <h2 class="lignendeprodukter">Lignende produkter</h2>
         <div id="lignendeliste" class="container">
             
             </div>
