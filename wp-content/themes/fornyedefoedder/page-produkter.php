@@ -18,13 +18,16 @@ get_header();
         <div id="main_container">
             <section id="first_section">
                 <article> 
-                <h2>Om fodplejeprodukter</h2>
-                <p></p>
+                <h2>Forebyggelse hjemmefra</h2>
+                <p>Her er en oversigt over de mærker og produkter jeg tilbyder i min klinik.
+                Bestil en tid, så kan vi snakke ydeligere om hvilke produkter der passer til lige dine fødder.</p>
                 </article>
+                <img src="" alt="" class="brand1">
+                <img src="" alt="" class="brand2">
+                <img src="" alt="" class="brand3">
             </section>
 
             <section id="second_section">
-                <h2 class="produkter">Produkter</h2>
                 <nav id="filtrering">
                  <button data-produkter="alle" class="valgt">Alle produkter</button>
              </nav>
@@ -34,9 +37,20 @@ get_header();
 
 
             <section id="third_section">
-                <article class="fodproblemer"></article>
-                <h2>Fodproblemer</h2>
-                <p></p>
+                <img src="" alt="" class="billede">
+                <h2 class="billedetitel"></h2>
+                <p class="billedetekst"></p>
+                </section>
+
+                <section id="fourth_section"> 
+                    <h2 class="info_om_fodsygdomme">Info om fodsygdomme</h2>
+                    <p class="tekst_om_fodsygdomme">Mange patienter er usikre omkring deres fødder og får derfor ikke set en 
+fodterapeut før skaden er sket.
+
+Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have
+– information generelt om fødder og fodsygdomme.</p>
+                <button class="se_mere">Se mere</button>
+                <img src="" alt="" class="infografik">
                 </section>
 
     </main><!-- #main -->
@@ -60,12 +74,6 @@ get_header();
                 const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
                 document.addEventListener("DOMContentLoaded", start);
-
-                function start() {
-                    console.log("start");
-
-                    hentData();
-                }
 
                 function start() {
                     console.log("start");

@@ -81,8 +81,8 @@ get_header();
 
     </main><!-- #main -->
     <template>
-        <h3 id="navn"></h3>
-        <p id="pris"> DKK</p>
+        <h3 class="navn"></h3>
+        <p class="pris"></p>
 
     </template>
 
@@ -94,7 +94,7 @@ get_header();
 
         console.log("behandlinger");
 
-        document.addEventListners("DOMContentLoaded", start);
+        document.addEventListener("DOMContentLoaded", start);
 
         function start() {
             console.log("start");
@@ -102,7 +102,7 @@ get_header();
             hentData();
         }
     
-        function hentData () {
+        async function hentData () {
             const respons = await fetch(url);
             behandlinger = await respons.json();
 
@@ -112,8 +112,7 @@ get_header();
         }
 
         function visBehandlinger() {
-            
-            const temp = document.querySelector("template")
+            const temp = document.querySelector("template").content;
 
             behandlinger.forEach(e => {
                 console.log("forEachBehandlinger");
@@ -123,7 +122,7 @@ get_header();
                 cat = e.kategori;
                 let dest = document.querySelector("#" + cat + "_container");
 
-                klon.querySelector(".navn").textContent = e.navn;
+                klon.querySelector(".navn").innerHTML = e.navn;
                 klon.querySelector(".pris").textContent = e.pris + " DKK";
 
                 console.log(dest);
