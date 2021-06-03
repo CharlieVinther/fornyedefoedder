@@ -29,7 +29,9 @@ get_header();
             <img src="" alt="" class="illu">
             <h3 class="titel"></h3>
             <p class="kilde"></p>
-            <button class="link">Læs mere</button>
+            <a href="" class="link">
+                <button>Læs mere</button>
+            </a>
         </article>
     </template>
 
@@ -72,8 +74,7 @@ get_header();
             klon.querySelector("img").src = e.illu.guid;
             klon.querySelector(".kilde").innerHTML = e.kilde;
 
-
-            klon.querySelector(".link").addEventListener("click", () => location.href = info.kildelink);
+            klon.querySelector(".link").href = info.kildelink;
 
             dest.appendChild(klon);
 
