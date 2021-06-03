@@ -97,7 +97,7 @@ get_header();
                         const dest = document.querySelector("#second_section");
                     const temp = document.querySelector("template").content;
 
-                    if (lignende.ID == produkt.ID && lignende.categories.includes(parseInt(produkt.categories))) {
+                    if (lignende.ID != produkt.ID && lignende.categories.includes(parseInt(produkt.categories))) {
 
                             console.log("IF");
 
