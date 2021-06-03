@@ -18,10 +18,13 @@ get_header();
         <article id="produkt_container">
             <div>
            <section id="first_section" class="single-produkt">
+           <div class="col">
            <img src="" alt="" class="billede">
+           </div>
+           <div class="col2">
            <h2 class="navn"></h2>
            <p class="beskrivelse"></p>
-           <img src="" alt="" class="brandlogo">
+           </div>
            </section>
            </div>
            </article></section>
