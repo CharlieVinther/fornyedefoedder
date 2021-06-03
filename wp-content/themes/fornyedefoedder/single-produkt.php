@@ -34,9 +34,9 @@ get_header();
         </template>
         
         <section id="second_section" class="single-produkt">
-        
+        <div class="container">
             <h2>Lignende produkter</h2>
-           
+            </div>
         </section>
    
     </main><!-- #main -->
