@@ -74,7 +74,7 @@ get_header();
             klon.querySelector("img").src = e.illu.guid;
             klon.querySelector(".kilde").innerHTML = e.kilde;
 
-            klon.querySelector(".link").href = info.kildelink;
+            klon.querySelector(".link").href = e.kildelink;
 
             dest.appendChild(klon);
 
