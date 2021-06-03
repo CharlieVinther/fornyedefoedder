@@ -25,7 +25,7 @@ get_header();
             
                 <article> 
                 <h2>Forebyggelse hjemmefra</h2>
-                <p>Her er en oversigt over de mærker og produkter jeg tilbyder i min klinik.
+					<p>Her er en oversigt over de mærker og produkter jeg tilbyder i min klinik.<br/>
                 Bestil en tid, så kan vi snakke ydeligere om hvilke produkter der passer til lige dine fødder.</p>
              
                 </article>
@@ -66,9 +66,9 @@ get_header();
                     <p class="tekst_om_fodsygdomme">Mange patienter er usikre omkring deres fødder og får derfor ikke set en 
 fodterapeut før skaden er sket.
 
-Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have
+Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have<br/>
 – information generelt om fødder og fodsygdomme.</p>
-                <button class="se_mere">Se mere</button>
+                <button class="se_mere button_two">Se mere</button>
                 </div>
                     <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/infografik.png" alt="" class="infografik">
                 </div>
