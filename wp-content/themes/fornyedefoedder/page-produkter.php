@@ -151,7 +151,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
 
                             const klon = temp.cloneNode(true);
 
-                            klon.querySelector(".produktbillede").src = produkt.image.guid;
+                            klon.querySelector(".produktbillede").src = produkt.billede.guid;
                             klon.querySelector(".navn").textContent = produkt.navn;
                             klon.querySelector(".size").textContent = produkt.size;
                             
