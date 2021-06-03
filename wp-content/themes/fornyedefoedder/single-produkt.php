@@ -13,7 +13,7 @@ get_header();
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main container">
         <section id="produkt">
         <article id="produkt_container">
             <div>
@@ -86,10 +86,10 @@ get_header();
 
             function visProdukt() {
                 console.log("visProdukt");
-                //document.querySelector(".billede").src = produkt.image.guid;
+                document.querySelector(".billede").src = produkt.billede.guid;
                 document.querySelector(".navn").textContent = produkt.navn;
                 document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
-                //document.querySelector(".brandlogo").src = produkt.image.guid;
+                //document.querySelector(".brandlogo").src = produkt.billede.guid;
 
                 produkter.forEach(lignende => {
                         console.log("forEachProdukt");
@@ -102,7 +102,7 @@ get_header();
 
                             const klon = temp.cloneNode(true);
 
-                            // klon.querySelector(".produktbillede").src = produkt.image.guid; //
+                            klon.querySelector(".produktbillede").src = produkt.image.guid;
                             klon.querySelector(".lignendenavn").textContent = lignende.navn;
                             klon.querySelector(".lignendesize").textContent = lignende.size;
                             
