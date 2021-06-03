@@ -43,6 +43,7 @@ get_header();
                 </section>
 
                 <section id="fourth_section" class="grid"> 
+                <div id="grid_container"></div>
                 <div class="col">
                     <h2 class="info_om_fodsygdomme">Info om fodsygdomme</h2>
                     <p class="tekst_om_fodsygdomme">Mange patienter er usikre omkring deres fødder og får derfor ikke set en 
@@ -53,6 +54,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 <button class="se_mere">Se mere</button>
                 </div>
                 <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/infografik.png" alt="" class="infografik">
+                </div>
                 </section>
 
     </main><!-- #main -->
