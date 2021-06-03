@@ -13,7 +13,7 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main container produkter">
+    <main id="main" class="site-main produkter">
 
         <div id="main_container">
             <section id="first_section">
