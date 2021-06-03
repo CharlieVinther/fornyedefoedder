@@ -71,6 +71,9 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
         </div>
 
         <div id="formular">
+			<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/fod.jpg" id="parallax" data-rellax-speed="-4">
+
+
             <div class="container">
                 <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
                 <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til at
@@ -89,7 +92,7 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 						<h2>
 							Find vej
 						</h2>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2559399248953!2d12.487382515622015!3d55.73668190070301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465251e5f2226909%3A0xf65780dcacaab5f!2sVandt%C3%A5rnsvej%2062a%2C%202860%20S%C3%B8borg!5e0!3m2!1sda!2sdk!4v1622579493181!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2559399248953!2d12.487382515622015!3d55.73668190070301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465251e5f2226909%3A0xf65780dcacaab5f!2sVandt%C3%A5rnsvej%2062a%2C%202860%20S%C3%B8borg!5e0!3m2!1sda!2sdk!4v1622579493181!5m2!1sda!2sdk" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 					<div class="col">
 					<h2 class="adresse">Adresse</h2>
 					<p>Vandtårnsvej 62A, 
@@ -109,20 +112,17 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 		</main><!-- #main -->
 
 	<script>
+		var rellax = new Rellax('#parallax');
+		var formularbaggrund = document.getElementById("parallax");
+		formularbaggrund.addEventListener("scroll", parallaxBg);
 
-		window.onscroll = function() {parallaxFunction()};
-var parallax = document.querySelectorAll("#formular"),
-      speed = 0.5;
-function parallaxFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-      var windowYOffset = pageYOffset,
-          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-      el.style.backgroundPosition = elBackgrounPos;
-  } else {
-  }
-};
+		function parallaxBg(){
+			console.log("parallax");
+			let formularBg = document.getElementById("parallax");
+								var value = window.scrollY;
+			formularBg.style.top = value + 0.2 + "px";
 
-
+								};
 
 	</script>
 

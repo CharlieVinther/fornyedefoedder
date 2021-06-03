@@ -13,39 +13,101 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main container">
+    <main id="main" class="site-main behandlinger">
 
         <div id="main_container">
-            <section id="first_section">
+			<div id="splash_section">
+	<h1>
+		Behandlinger og priser
+				</h1>
+		</div>
+            <section id="section_one">
+				<div class="container">
+					<div class="col">
+
+
                 <div id="behandling_container">
                 
-                    <div id="Fodbehandlinger_container">
+                    <div id="Fodbehandlinger_container" class="priser">
+						<h2>
+							Fodbehandlinger
+						</h2>
+						<h4>
+							Pris
+						</h4>
                     </div>
                     
-                    <div id="Neglebehandlinger_container"></div>
+                    <div id="Neglebehandlinger_container" class="priser">
+						<h2>
+							Neglebehandlinger
+						</h2>
+						<h4>
+							Pris
+						</h4>
+					</div>
+					</div>
+						</div>
+                    
+                    <div class="col">
+
+
+                    <div id="Gebyr_container" class="priser">
+						<h2>
+							Andre tillæg og gebyrer
+						</h2>
+						<h4>
+							Pris
+						</h4>
+					</div>
                     
                     
-                    <div id="Gebyr_container"></div>
-                    
-                    
-                    <div id="Saar_container"></div>
+                    <div id="Saar_container" class="priser">
+						<h2>
+							Sårbehandling
+						</h2><h4>
+						pris
+						</h4>
+					</div>
                        
                     
-                    <div id="Indlaeg_container"></div>
+
+                    <div id="Indlaeg_container" class="priser">
+						<h2>Indlæg
+						</h2><h4>
+						pris
+						</h4>
+					</div>
                     <p>Afbud skal ske senest 24 timer før din tid, ved senere afbud eller
 udeblivelse, tager jeg et gebyr på 250 kr.</p>
                 </div>
-                <div id="behandling_text_container">
+
+					</div>
+
+            </section>
+
+					</div>
+
+		<section id="tilskud">
+					<div id="behandling_text_container" class="container">
+
                     <h2>Tilskud og henvisning</h2>
                     <p>Patienter har følgende tildkudsmuligheder</p>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+						<ul>
+							<li><a href="">Sygeforsikring Danmark</a></li>
+							<li><a href="">Helbredstillæg fra kommunen</a></li>
+							<li><a href="">Den offentlige sygesikring</a></li>
+						</ul>
+
+
                     <p>Du er velkommen til at <a href="">kontakte</a> mig ved yderligere spørgsmål.</p>
                 </div>
-            </section>
+			</section>
             <section id="second_section">
+				<div class="container">
+
+
                 <h2>Info om fødder og fodsygdomme</h2>
+					</div>
             </section>
             <section id="third_section">
             <div id="formular">
@@ -106,7 +168,7 @@ udeblivelse, tager jeg et gebyr på 250 kr.</p>
                 let dest = document.querySelector("#" + cat + "_container");
 
                 klon.querySelector(".navn").innerHTML = e.navn;
-                klon.querySelector(".pris").textContent = e.pris + " DKK";
+                klon.querySelector(".pris").textContent = e.pris + " Kr";
 
                 console.log(dest);
 
