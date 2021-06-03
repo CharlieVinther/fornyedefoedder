@@ -27,9 +27,9 @@ get_header();
                 <p>Her er en oversigt over de mærker og produkter jeg tilbyder i min klinik.
                 Bestil en tid, så kan vi snakke ydeligere om hvilke produkter der passer til lige dine fødder.</p>
                 </article>
-                <img src="" alt="" class="brand1">
-                <img src="" alt="" class="brand2">
-                <img src="" alt="" class="brand3">
+                <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/allpresan.png" alt="" class="brand1">
+                <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/allpremed.png" alt="" class="brand2">
+                <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/tree.png" alt="" class="brand3">
                 </div>
             </section>
 
