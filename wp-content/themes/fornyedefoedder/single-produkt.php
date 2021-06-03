@@ -16,35 +16,33 @@ get_header();
     <main id="main" class="site-main">
         <section id="first_section" class="single-produkt container">
             <article id="produkt_container_single">
-                    <div class="col">
-                        <img src="" alt="" class="billede">
-                    </div>
-                    <div class="col2">
-                        <h2 class="navn"></h2>
-                        <p class="beskrivelse"></p>
-                    </div>
+                <div class="col">
+                    <img src="" alt="" class="billede">
+                </div>
+                <div class="col2">
+                    <h2 class="navn"></h2>
+                    <p class="beskrivelse"></p>
+                </div>
             </article>
         </section>
         <template>
             <article id="lignende_container">
                 <img src="" alt="" class="produktbillede">
                 <div class="col">
-                <h2 class="lignendenavn"></h2>
-                <p class="lignendesize"></p>
+                    <h2 class="lignendenavn"></h2>
+                    <p class="lignendesize"></p>
                 </div>
             </article>
         </template>
-        
+
         <section id="second_section" class="single-produkt">
-       
-        <div id="lignendeliste" class="container">
-        
-        <h2 class="lignendeprodukter">Lignende produkter</h2>
-        <div class="grid">
-            </div>
+
+            <div id="lignendeliste" class="container">
+
+                <h2 class="lignendeprodukter">Lignende produkter</h2>
             </div>
         </section>
-   
+
     </main><!-- #main -->
 
 
