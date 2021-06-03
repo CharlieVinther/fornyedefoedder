@@ -23,68 +23,63 @@ get_header();
                 </div>
             </section>
         </div>
-
     </main><!-- #main -->
     <template>
         <article>
             <img src="" alt="" class="illu">
             <h3 class="titel"></h3>
             <p class="kilde"></p>
-            <a href="" class="kildelink">
-                <button>Læs mere</button>
-            </a>
+            <button class="link">Læs mere</button>
         </article>
     </template>
 
 
     <script>
-        let info;
-        const url = "";
+    let info;
+    const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info?per_page=100";
 
-        console.log("info")
+    console.log("info")
 
-        document.addEventListener("DOMContentLoaded", start);
+    document.addEventListener("DOMContentLoaded", start);
 
-        function start() {
-            console.log("start");
-            
-            hentData();
-        }
-    
-        async function hentData () {
-            const respons = await fetch(url);
-            info = await respons.json();
+    function start() {
+        console.log("start");
 
-            console.log(info);
+        hentData();
+    }
 
-            visInfo();
-        }
+    async function hentData() {
+        const respons = await fetch(url);
+        info = await respons.json();
 
-        visInfo() {
-            console.log("visInfo");
+        console.log(info);
 
-            const temp = document.querySelector("template").content;
-            const dest = document.querySelector("#info_loop");
+        visInfo();
+    }
 
-            info.forEach(e => {
-                console.log("forEach");
+    function visInfo() {
+        console.log("visInfo");
 
-                const klon = temp.cloneNode(true);
+        const temp = document.querySelector("template").content;
+        const dest = document.querySelector("#info_loop");
 
-                klon.querySelector(".titel").innerHTML = e.titel;
-                klon.querySelector("img").src = e.illu.guid;
-                klon.querySelector(".kilde").innerHTML = e.kilde;
-                klon.querySelector(".kildelink").href = e.kildelink;
-                
-                
+        info.forEach(e => {
+            console.log("forEach");
 
-                dest.appendChild(klon);
+            const klon = temp.cloneNode(true);
 
-            });
+            klon.querySelector(".titel").innerHTML = e.titel;
+            klon.querySelector("img").src = e.illu.guid;
+            klon.querySelector(".kilde").innerHTML = e.kilde;
 
-        }
-    
-    
+
+            klon.querySelector(".link").addEventListener("click", () => location.href = info.kildelink);
+
+            dest.appendChild(klon);
+
+        });
+
+    }
     </script>
 
 </div><!-- #primary -->
