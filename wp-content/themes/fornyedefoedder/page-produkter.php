@@ -17,6 +17,7 @@ get_header();
 
         <div id="main_container">
             <section id="first_section">
+            <div class="container">
                 <article> 
                 <h2>Forebyggelse hjemmefra</h2>
                 <p>Her er en oversigt over de mærker og produkter jeg tilbyder i min klinik.
@@ -25,6 +26,7 @@ get_header();
                 <img src="" alt="" class="brand1">
                 <img src="" alt="" class="brand2">
                 <img src="" alt="" class="brand3">
+                </div>
             </section>
 
             <section id="second_section">
@@ -35,7 +37,9 @@ get_header();
              </div>
             </section>
 
-            <section id="produktliste"></section>
+            <section id="produktliste">
+            <div class="container"></div>
+            </section>
 
 
             <section id="third_section">
