@@ -18,7 +18,9 @@ get_header();
         <div id="main_container">
             <section id="first_section">
                 <div id="behandling_container">
+                    <h2>Fodbehandliger</h2>
                     <div id="Fodbehandlinger_container"></div>
+                    <h2>Neglebehandlinger</h2>
                     <div id="Neglebehandlinger_container"></div>
                     <div id="Gebyr_container"></div>
                     <div id="Saar_container"></div>

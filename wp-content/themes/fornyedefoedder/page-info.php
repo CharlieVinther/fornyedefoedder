@@ -31,6 +31,14 @@ get_header();
         <article></article>
     </template>
 
+
+    <script>
+        let info;
+        let url;
+    
+    
+    </script>
+
 </div><!-- #primary -->
 
 <?php
