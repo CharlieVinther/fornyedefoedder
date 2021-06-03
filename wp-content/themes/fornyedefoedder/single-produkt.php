@@ -26,15 +26,14 @@ get_header();
             </article>
         </section>
         <template>
-            <article id="lignende_container"
-            class="container">
+            <article id="lignende_container">
                 <img src="" alt="" class="produktbillede">
                 <h2 class="lignendenavn"></h2>
                 <p class="lignendesize"></p>
             </article>
         </template>
 
-        <section id="second_section" class="single-produkt">
+        <section id="second_section" class="single-produkt container">
             <h2>Lignende produkter</h2>
         </section>
 
@@ -104,7 +103,7 @@ get_header();
 
                 const klon = temp.cloneNode(true);
 
-                klon.querySelector(".produktbillede").src = lignende.billede.guid;
+                klon.querySelector(".produktbillede").src = .billede.guid;
                 klon.querySelector(".lignendenavn").textContent = lignende.navn;
                 klon.querySelector(".lignendesize").textContent = lignende.size;
 
