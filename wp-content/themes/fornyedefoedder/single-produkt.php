@@ -14,6 +14,9 @@ get_header();
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main singleview">
+    <section id="splash_section">
+   
+    </section>
         <section id="first_section" class="single-produkt container">
             <article id="produkt_container_single">
                 <div class="col">
