@@ -19,8 +19,8 @@ get_header();
             <div>
            <section id="first_section" class="single-produkt">
            <img src="" alt="" class="billede">
-           <h3 class="navn"></h3>
-           <h2 class="beskrivelse"></h2>
+           <h2 class="navn"></h2>
+           <p class="beskrivelse"></p>
            <img src="" alt="" class="brandlogo">
            </section>
            </div>
