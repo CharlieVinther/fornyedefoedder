@@ -37,10 +37,11 @@ get_header();
              </div>
             </section>
 
+            <div class="container">
             <section id="produktliste">
-            <div class="container"></div>
+            
             </section>
-
+            </div>
 
             <section id="third_section">
             <div class="container">
