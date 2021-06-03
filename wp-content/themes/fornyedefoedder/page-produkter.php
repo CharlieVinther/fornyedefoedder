@@ -42,7 +42,7 @@ get_header();
                 <p class="billedetekst"></p>
                 </section>
 
-                <section id="fourth_section"> 
+                <section id="fourth_section" class="container"> 
                     <h2 class="info_om_fodsygdomme">Info om fodsygdomme</h2>
                     <p class="tekst_om_fodsygdomme">Mange patienter er usikre omkring deres fødder og får derfor ikke set en 
 fodterapeut før skaden er sket.
