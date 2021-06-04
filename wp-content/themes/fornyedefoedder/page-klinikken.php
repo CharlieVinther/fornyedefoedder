@@ -89,16 +89,26 @@ behandlingen med dig.
 							Find vej
 						</h2>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2559399248953!2d12.487382515622015!3d55.73668190070301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465251e5f2226909%3A0xf65780dcacaab5f!2sVandt%C3%A5rnsvej%2062a%2C%202860%20S%C3%B8borg!5e0!3m2!1sda!2sdk!4v1622579493181!5m2!1sda!2sdk" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					</div>
+
+						</div>
 					<div class="col">
 						<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/skilt.jpg" alt="">
 					</div>
-                </div>
+
+
+
+
+					</div>
+
+
+
+
             </section>
 
         </div>
 
     </main><!-- #main -->
+
 </div><!-- #primary -->
 
 <?php
