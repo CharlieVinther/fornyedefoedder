@@ -122,7 +122,7 @@ get_header();
             const dest = document.querySelector("#lignendeliste");
             const temp = document.querySelector("template").content;
 
-            if (lignende.id != produkt.id && lignende.categories.includes(parseInt(produkt.categories))) {
+            if (lignende.id != info.id && lignende.categories.includes(parseInt(info.categories))) {
 
                 console.log("IF");
 
