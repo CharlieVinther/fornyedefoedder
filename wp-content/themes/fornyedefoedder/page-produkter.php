@@ -151,7 +151,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
 
                 function addEventListenerToButton() {
                     console.log("button");
-                    document.querySelectorAll("#filtrering").forEach(knap => {
+                    document.querySelectorAll(".filter").forEach(knap => {
                         knap.addEventListener("click", filtrerProdukter);
                     });
                 }
