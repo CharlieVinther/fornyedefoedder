@@ -24,7 +24,7 @@ get_header();
 			 <section id="second_section">
             <div class="container">
                 <nav id="filtrering">
-                 <button data-info="alle" class="valgt">Alle</button>
+                <button data-info="Alle" class="valgt filter">Alle artikler</button>
              </nav>
              </div>
             </section>
@@ -65,6 +65,9 @@ get_header();
 
 
     let infoer;
+    let categories;
+    let filter = "alle";
+    
     const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info?per_page=100";
 	const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
@@ -111,7 +114,7 @@ get_header();
 
                 function addEventListenerToButton() {
                     console.log("button");
-                    document.querySelectorAll("#filtrering").forEach(knap => {
+                    document.querySelectorAll(".filter").forEach(knap => {
                         knap.addEventListener("click", filtrerInfo);
                     })
                 }
@@ -130,7 +133,11 @@ get_header();
         info.forEach(e => {
             console.log("forEach");
 
+            if (filter == "alle" || info.categories.includes(parseInt(filter))) {
+
             const klon = temp.cloneNode(true);
+
+            
 
             klon.querySelector(".titel").innerHTML = e.titel;
             klon.querySelector("img").src = e.illu.guid;
@@ -139,6 +146,8 @@ get_header();
             klon.querySelector(".link").href = e.kildelink;
 
             dest.appendChild(klon);
+
+            }
 
         });
 
