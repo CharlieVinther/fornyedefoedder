@@ -67,7 +67,7 @@ get_header();
     let infoer;
     let categories;
     let filter = "alle";
-    
+
     const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info?per_page=100";
 	const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
@@ -122,6 +122,8 @@ get_header();
                 function filtrerInfo() {
                     filter = this.dataset.info;
                     console.log("filtrerInfo")
+
+                    visInfo();
 				}
 
     function visInfo() {
@@ -129,6 +131,8 @@ get_header();
 
         const temp = document.querySelector("template").content;
         const dest = document.querySelector("#info_loop");
+
+        dest.textContent = "";
 
         info.forEach(e => {
             console.log("forEach");
