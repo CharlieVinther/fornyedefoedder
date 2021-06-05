@@ -24,7 +24,7 @@ get_header();
 			 <section id="second_section">
             <div class="container">
                 <nav id="filtrering">
-                <button data-info="Alle" class="valgt filter">Alle artikler</button>
+                <button data-info="alle" class="valgt filter">Alle artikler</button>
              </nav>
              </div>
             </section>
