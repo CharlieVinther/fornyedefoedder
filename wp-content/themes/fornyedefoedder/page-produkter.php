@@ -169,7 +169,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                     const dest = document.querySelector("#produktliste");
                     const temp = document.querySelector("template").content;
 
-                    dest = textContent = "";
+                    dest.textContent = "";
 
                     produkter.forEach(produkt => {
                         console.log("forEachProdukter");
