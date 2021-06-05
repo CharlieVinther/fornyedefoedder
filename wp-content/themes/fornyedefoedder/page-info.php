@@ -137,7 +137,7 @@ get_header();
         info.forEach(e => {
             console.log("forEach");
 
-            if (filter == "alle" || info.categories.includes(parseInt(filter))) {
+            if (filter == "alle" || e.categories.includes(parseInt(filter))) {
 
             const klon = temp.cloneNode(true);
 
