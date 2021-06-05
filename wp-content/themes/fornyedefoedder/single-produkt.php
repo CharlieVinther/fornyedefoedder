@@ -18,6 +18,15 @@ get_header();
    
     </section>
         <section id="first_section" class="single-produkt container">
+			<div class="brodkrumme">
+				<p class="bread">
+
+				</p>
+				<a href="http://charlievinther.dk/fornyedefoedder/produkter/" class="tilbage">
+					Gå tilbage
+				</a>
+			</div>
+
             <article id="produkt_container_single">
                 <div class="col">
                     <img src="" alt="" class="billede">
@@ -25,6 +34,7 @@ get_header();
                 <div class="col2">
                     <h2 class="navn"></h2>
                     <p class="beskrivelse"></p>
+					<p class="size"></p>
                 </div>
             </article>
         </section>
@@ -39,7 +49,10 @@ get_header();
         </template>
 
         <section id="second_section" class="single-produkt">
+			<div class="container">
+
         <h2 class="lignendeprodukter">Lignende produkter</h2>
+				</div>
             <div id="lignendeliste" class="container">
 
                 
@@ -61,6 +74,8 @@ get_header();
 
     const produktUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt?per_page=100";
 
+		const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
+
     const container = document.querySelector("#produkt");
 
     document.addEventListener("DOMContentLoaded", start);
@@ -76,6 +91,8 @@ get_header();
     async function getJSON() {
         const data = await fetch(dbUrl);
         produkt = await data.json();
+		const catrespons = await fetch(caturl);
+                    categories = await catrespons.json();
 
 
         hentData();
@@ -85,20 +102,19 @@ get_header();
 
     async function hentData() {
         const respons = await fetch(produktUrl);
-
         produkter = await respons.json();
-
         console.log(produkter);
         visProdukt();
 
     }
-
 
     function visProdukt() {
         console.log("visProdukt");
         document.querySelector(".billede").src = produkt.billede.guid;
         document.querySelector(".navn").textContent = produkt.navn;
         document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
+		document.querySelector(".size").textContent = produkt.size;
+		document.querySelector(".bread").textContent = "Produkter / " +"<?php echo ''. get_the_category( $id )[0]->name .''?> / " + produkt.navn;
         //document.querySelector(".brandlogo").src = produkt.billede.guid;
 
         produkter.forEach(lignende => {
@@ -117,6 +133,7 @@ get_header();
                 klon.querySelector(".lignendesize").textContent = lignende.size;
 
 
+
                 klon.querySelector("#lignende_container").addEventListener("click", () => location.href =
                     lignende
                     .link);
@@ -127,6 +144,8 @@ get_header();
         });
 
     }
+
+
     </script>
 </div>
 <!-- #primary -->
