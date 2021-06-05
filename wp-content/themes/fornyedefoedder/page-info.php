@@ -21,6 +21,13 @@ get_header();
 					Info om fødder
 				</h1>
 			</div>
+			 <section id="second_section">
+            <div class="container">
+                <nav id="filtrering">
+                 <button data-info="alle" class="valgt">Alle</button>
+             </nav>
+             </div>
+            </section>
             <section id="first_section">
                 <div class="container">
                     <div id="info_loop">
@@ -44,8 +51,22 @@ get_header();
 
 
     <script>
-    let info;
+                async function hentData() {
+
+                    const catrespons = await fetch(caturl);
+                    categories = await catrespons.json();
+                    console.log(produkter);
+
+                    opretKnapper();
+                }
+
+
+
+
+
+    let infoer;
     const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info?per_page=100";
+	const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
     console.log("info")
 
@@ -60,11 +81,45 @@ get_header();
     async function hentData() {
         const respons = await fetch(url);
         info = await respons.json();
+		const catrespons = await fetch(caturl);
+                    categories = await catrespons.json();
+                    console.log(info);
+
+                    opretKnapper();
 
         console.log(info);
 
         visInfo();
     }
+
+
+
+		function opretKnapper() {
+                    console.log("opretKnapper")
+
+                    categories.forEach(cat => {
+
+						if (cat.id > 11) {
+							 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-info="${cat.id}">${cat.name}</button>`
+							 addEventListenerToButton();
+
+						}
+                    })
+
+                }
+
+
+                function addEventListenerToButton() {
+                    console.log("button");
+                    document.querySelectorAll("#filtrering").forEach(knap => {
+                        knap.addEventListener("click", filtrerInfo);
+                    })
+                }
+
+                function filtrerInfo() {
+                    filter = this.dataset.info;
+                    console.log("filtrerInfo")
+				}
 
     function visInfo() {
         console.log("visInfo");

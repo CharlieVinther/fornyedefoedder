@@ -136,11 +136,18 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 function opretKnapper() {
                     console.log("opretKnapper")
 
-                    categories.forEach(cat => {
-                        document.querySelector("#filtrering").innerHTML += `<button class="filter" data-produkter="${cat.id}">${cat.name}</button>`
-                    })
-                    addEventListenerToButton();
+                    categories.forEach(cat => {
+
+						if (cat.id <= 11) {
+							 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-info="${cat.id}">${cat.name}</button>`
+							 addEventListenerToButton();
+
+						}
+                    })
+
                 }
+
+
 
                 function addEventListenerToButton() {
                     console.log("button");
