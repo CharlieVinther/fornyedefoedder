@@ -47,7 +47,7 @@ I arbejdet hermed anvender jeg min brede sundhedsmæssige erfaring som jeg har e
             <section id="section_two">
 				<div class="container">
 
-                <h2>Praktisk info</h2>
+                
                 <div id="ui_container">
                     <div class="ui_info">
                         <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/handicap.svg" alt="">
