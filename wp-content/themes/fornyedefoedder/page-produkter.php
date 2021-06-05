@@ -158,7 +158,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
 
                 function filtrerProdukter() {
                     filter = this.dataset.produkter;
-                    console.log("filtrerProdukter");
+                    console.log("filtrerProdukter",filter);
 
                     visProdukter();
                 }
