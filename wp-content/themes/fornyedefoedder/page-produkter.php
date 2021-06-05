@@ -40,7 +40,7 @@ get_header();
             <section id="second_section">
             <div class="container">
                 <nav id="filtrering">
-                 <button data-produkter="alle" class="filter">Alle produkter</button>
+                 <button data-produkter="alle" class="valgt filter">Alle produkter</button>
              </nav>
              </div>
             </section>
