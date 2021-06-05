@@ -58,17 +58,38 @@ get_header();
                 <p class="billedetekst"></p>
                 </div>
                 </section>
-
-                <section id="section_four" class="grid"> 
+<section id="form_indlag">
+		<div class="container">
+			<div class="col">
+				<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/form.png" width="540px" height="373px" alt="special indlæg">
+			</div>
+			<div class="col">
+				<h2>
+					Certificeret i indlægssåler
+fra formthotics
+				</h2>
+				<p>
+					Det betyder at jeg udover at være uddannet fodterapeut, har valgt at tage et kursus
+i individuelle indlæg fra Formthotics.
+				</p>
+				<p>
+Formthotics er indlæg som jeg speciallaver i klinikken til netop dine fødder, det gøres ved at
+opvarme indlægget og forme det efter din sko og fod, så du er sikret den rette støtte til lige
+netop dine fødder.
+				</p>
+			</div>
+			</div>
+		</section>
+                <section id="section_four" class="grid info">
                 <div class="container">
                 <div class="col">
                     <h2 class="info_om_fodsygdomme">Info om fodsygdomme</h2>
                     <p class="tekst_om_fodsygdomme">Mange patienter er usikre omkring deres fødder og får derfor ikke set en 
 fodterapeut før skaden er sket.
 
-Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have<br/>
+Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne have
 – information generelt om fødder og fodsygdomme.</p>
-                <button class="se_mere button_two">Se mere</button>
+               <a href="http://charlievinther.dk/fornyedefoedder/info/"> <button class="se_mere button_two">Se mere</button></a>
                 </div>
                     <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/infografik.png" alt="" class="infografik">
                 </div>
@@ -123,7 +144,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
 
                 function addEventListenerToButton() {
                     console.log("button");
-                    document.querySelectorAll("#filtrering button").forEach(knap => {
+                    document.querySelectorAll("#filtrering").forEach(knap => {
                         knap.addEventListener("click", filtrerProdukter);
                     })
                 }

@@ -20,16 +20,16 @@
 			<div class="container">
 				<div class="col">
 
-				<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/tlf.svg" alt="tlf ikon">
-					<p>+45 2014 4866</p>
+				<a href=""><img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/tlf.svg" alt="tlf ikon">
+					<p>+45 2014 4866</p></a>
 					</div>
 				<div class="col">
-					<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/mail.svg" alt="mail ikon">
-					<p>fornyedefoedder@gmail.com</p>
+					<a href="mailto:fornyedefoedder@gmail.com" target="_blank"><img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/mail.svg" alt="mail ikon">
+					<p>fornyedefoedder@gmail.com</p></a>
 					</div>
 					<div class="col">
-					<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/facebook.svg" alt="facebook ikon">
-					<p>fornyedefødder</p>
+					<a href="#"><img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/facebook.svg" alt="facebook ikon">
+					<p>fornyedefødder</p></a>
 						</div>
 			</div>
 		</div>
@@ -69,7 +69,7 @@
 				<h3>
 					Fornyede Fødder
 					<ul>
-						<li>Vandtårnsvej 62A, 1. sal E. nr. 3 2860 Søborg </li>
+						<li>Vandtårnsvej 62A, Stuen E. nr. 3, 2860 Søborg </li>
 						<br/>
 						<li>Tlf: +45 2014 4866</li>
 						<li>Mail: fornyedefodder@gmail.com</li>

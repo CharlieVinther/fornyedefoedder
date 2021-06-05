@@ -13,8 +13,17 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
-<div id="splash_section">
+    <main id="main" class="site-main front">
+<div id="splash_section" class="rellax">
+	<h1>
+		<b>Velkommen til</b> <br/>
+		Sunde og smertefrie fødder
+	</h1>
+	<div style="position: fixed; z-index: -99; width: 100%; height: 100%; top: 0;">
+
+	  <video autoplay="" loop="" muted="" id="video_intro" class="" src="http://charlievinther.dk/Splashvideo.mp4" width="100%" height="auto%"></video>
+
+</div>
 
 		</div>
         <div id="section_one">
@@ -26,7 +35,7 @@ get_header();
 af hård hud og ligtorne, behandling af
 indgroede negle. Behandling og forebyggelse
 af sår. Indlægssåler osv.</p>
-                    <button class="button_two">Se mere</button>
+                   <a href="http://charlievinther.dk/fornyedefoedder/behandlinger/"> <button class="button_two">Se mere</button></a>
                 </div>
 
                 <div class="col">
@@ -34,13 +43,13 @@ af sår. Indlægssåler osv.</p>
                     <h2 class="fodproblemer">Info om fødder og fodsygdomme</h2>
                     <p>Jeg har samlet lidt information
 om fødder og fodsygdomme.</p>
-                    <button class="button_two">Se mere</button>
+                    <a href="http://charlievinther.dk/fornyedefoedder/info/"> <button class="se_mere button_two">Se mere</button></a>
                 </div>
                 <div class="col">
                     <img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/klinik-ikon-1.svg" alt="klinik ikon">
                     <h2 class="om_klinikken">Klinik i Søborg</h2>
-                    <p>Jeg har under "Om klinikken" samlet noget praktisk information.</p>
-                    <button class="button_two">Se mere</button>
+                    <p>Under "om klinikken" kan du læse lidt om hvem jeg er og praktiske informationer om klinikken.</p>
+                   <a href="http://charlievinther.dk/fornyedefoedder/klinikken/"> <button class="button_two">Se mere</button></a>
                 </div>
 
             </div>
@@ -70,11 +79,10 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 
         </div>
 
-        <div id="formular" >
-			<img src="http://charlievinther.dk/fornyedefoedder/wp-content/uploads/2021/06/fod.jpg" class="rellax" data-rellax-speed="-4">
+        <div id="formular">
 
 
-            <div class="container">
+            <div class="container rellax" data-rellax-speed="1">
                 <h2 class="bliv_kontaktet">Bliv kontaktet</h2>
                 <p>Hvis du har spørgsmål eller gerne vil bestille en tid, kan du bruge nedenstående formular til at
                     blive kontaktet, så vi sammen kan finde frem til den rette behandling.</p>
@@ -92,7 +100,7 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 						<h2>
 							Find vej
 						</h2>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2559399248953!2d12.487382515622015!3d55.73668190070301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465251e5f2226909%3A0xf65780dcacaab5f!2sVandt%C3%A5rnsvej%2062a%2C%202860%20S%C3%B8borg!5e0!3m2!1sda!2sdk!4v1622579493181!5m2!1sda!2sdk" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.2559399248953!2d12.487382515622015!3d55.73668190070301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465251e5f2226909%3A0xf65780dcacaab5f!2sVandt%C3%A5rnsvej%2062a%2C%202860%20S%C3%B8borg!5e0!3m2!1sda!2sdk!4v1622579493181!5m2!1sda!2sdk" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 					<div class="col">
 					<h2 class="adresse">Adresse</h2>
 					<p>Vandtårnsvej 62A, 
@@ -114,8 +122,7 @@ har behov for behandling eller forbyggelse af fodlidelser hos en fodterapeut.</p
 
 
 
-var rellax = new Rellax('.rellax',{
-					wrapper = document.	});
+var rellax = new Rellax('.rellax');
 
 
 
