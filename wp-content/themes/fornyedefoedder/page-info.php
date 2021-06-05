@@ -13,9 +13,14 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main">
+    <main id="main" class="site-main info_fodder">
 
         <div id="main_container">
+			<div id="splash_section">
+				<h1>
+					Info om fødder
+				</h1>
+			</div>
             <section id="first_section">
                 <div class="container">
                     <div id="info_loop">
@@ -28,10 +33,12 @@ get_header();
         <article>
             <img src="" alt="" class="illu">
             <h3 class="titel"></h3>
+			<div class="info_grid">
             <p class="kilde"></p>
-            <a href="" class="link">
+            <a href="" target="_blank" class="link">
                 <button>Læs mere</button>
             </a>
+				</div>
         </article>
     </template>
 
