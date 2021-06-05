@@ -139,7 +139,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                     categories.forEach(cat => {
 
 						if (cat.id <= 11) {
-							 produkter.querySelector("#filtrering").innerHTML += `<button class="filter" data-info="${cat.id}">${cat.name}</button>`;
+							 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-produkter="${cat.id}">${cat.name}</button>`;
 							 addEventListenerToButton();
 
 						}
