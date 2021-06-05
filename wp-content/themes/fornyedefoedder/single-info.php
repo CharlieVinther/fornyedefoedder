@@ -134,9 +134,7 @@ get_header();
 
 
 
-                klon.querySelector("#lignende_container").addEventListener("click", () => location.href =
-                    lignende
-                    .link);
+                klon.querySelector("#lignende_container").addEventListener("click", () => location.href = lignende.link);
 
                 dest.appendChild(klon);
                 //klon.querySelector("").
