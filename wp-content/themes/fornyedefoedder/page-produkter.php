@@ -134,16 +134,16 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 }
 
                 function opretKnapper() {
-                    console.log("opretKnapper")
+                    console.log("opretKnapper");
 
                     categories.forEach(cat => {
 
 						if (cat.id <= 11) {
-							 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-info="${cat.id}">${cat.name}</button>`
+							 document.querySelector("#filtrering").innerHTML += `<button class="filter" data-info="${cat.id}">${cat.name}</button>`;
 							 addEventListenerToButton();
 
 						}
-                    })
+                    });
 
                 }
 
@@ -153,7 +153,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                     console.log("button");
                     document.querySelectorAll("#filtrering").forEach(knap => {
                         knap.addEventListener("click", filtrerProdukter);
-                    })
+                    });
                 }
 
                 function filtrerProdukter() {
