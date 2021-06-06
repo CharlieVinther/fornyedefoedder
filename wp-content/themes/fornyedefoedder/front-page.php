@@ -12,6 +12,11 @@
 get_header();
 ?>
 
+<head>
+<title>Fornyede Fødder</title>
+<meta name="description" content="Velkommen til Fornyede Fødder v/Stine Stubtoft - statsautoriseret fodterapeut i Søborg">
+</head>
+
 <div id="primary" class="content-area">
     <main id="main" class="site-main front">
         <div id="splash_section" class="rellax">
