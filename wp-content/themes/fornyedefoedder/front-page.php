@@ -15,6 +15,8 @@ get_header();
 <head>
 <title>Fornyede Fødder</title>
 <meta name="description" content="Velkommen til Fornyede Fødder v/Stine Stubtoft - statsautoriseret fodterapeut i Søborg">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <div id="primary" class="content-area">
