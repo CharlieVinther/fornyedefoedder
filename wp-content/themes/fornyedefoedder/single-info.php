@@ -13,84 +13,64 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-    <main id="main" class="site-main singleview">
+    <main id="main" class="site-main singleview single-info">
     <section id="splash_section">
 
     </section>
-        <section id="first_section" class="single-produkt container">
+        <section id="first_section" class="single-info">
+			<div class="container">
+
 			<div class="brodkrumme">
 				<p class="bread">
 
 				</p>
-				<a href="http://charlievinther.dk/fornyedefoedder/produkter/" class="tilbage">
+				<a href="http://charlievinther.dk/fornyedefoedder/info/" class="tilbage">
 					Gå tilbage
 				</a>
 			</div>
 
-            <article id="produkt_container_single">
+            <article id="info_container_single">
                 <div class="col">
                     <img src="" alt="" class="billede">
+					<a class="se_mere" href="" target="_blank"></a>
                 </div>
-                <div class="col2">
+                <div class="col">
                     <h2 class="navn"></h2>
                     <p class="beskrivelse"></p>
-					<p class="size"></p>
                 </div>
             </article>
-        </section>
-        <template>
-            <article id="lignende_container">
-                <img src="" alt="" class="produktbillede">
-                <div class="col">
-                    <h2 class="lignendenavn"></h2>
-                    <p class="lignendesize"></p>
-                </div>
-            </article>
-        </template>
-
-        <section id="second_section" class="single-produkt">
-			<div class="container">
-
-        <h2 class="lignendeprodukter">Lignende produkter</h2>
 				</div>
-            <div id="lignendeliste" class="container">
-
-
-            </div>
         </section>
+
 
     </main><!-- #main -->
 
 
 
     <script>
-    let produkt;
-    let produkter;
-    let aktueltProdukt = <?php echo get_the_ID() ?>;
+		let info;
+    let infoer;
+    let aktueltInfo = <?php echo get_the_ID() ?>;
 
 
-    const dbUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt/" + aktueltProdukt;
+    const dbUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info/" + aktueltInfo;
 
 
-    const produktUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt?per_page=100";
+    const infoUrl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/info?per_page=100";
 
 		const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
-    const container = document.querySelector("#produkt");
 
     document.addEventListener("DOMContentLoaded", start);
 
     function start() {
         console.log("start");
-
-
-
-        getJSON();
+		getJSON();
     }
 
     async function getJSON() {
         const data = await fetch(dbUrl);
-        produkt = await data.json();
+        info = await data.json();
 		const catrespons = await fetch(caturl);
                     categories = await catrespons.json();
 
@@ -101,47 +81,26 @@ get_header();
     }
 
     async function hentData() {
-        const respons = await fetch(produktUrl);
-        produkter = await respons.json();
-        console.log(produkter);
-        visProdukt();
+        const respons = await fetch(infoUrl);
+        infoer = await respons.json();
+        console.log(infoer);
+        visInfo();
 
     }
 
-    function visProdukt() {
-        console.log("visProdukt");
-        document.querySelector(".billede").src = produkt.billede.guid;
-        document.querySelector(".navn").textContent = produkt.navn;
-        document.querySelector(".beskrivelse").textContent = produkt.beskrivelse;
-		document.querySelector(".size").textContent = produkt.size;
-		document.querySelector(".bread").textContent = "Info / " +"<?php echo ''. get_the_category( $id )[0]->name .''?> / " + produkt.navn;
+    function visInfo() {
+        console.log("visInfo");
+        document.querySelector(".billede").src = info.illu.guid;
+        document.querySelector(".navn").textContent = info.titel;
+        document.querySelector(".beskrivelse").textContent = info.indhold;
+		document.querySelector(".se_mere").href = info.se_mere;
+		document.querySelector(".se_mere").textContent = info.kildelink;
+		document.querySelector(".bread").textContent = "Info / " +"<?php echo ''. get_the_category( $id )[0]->name .''?> / " + info.titel;
         //document.querySelector(".brandlogo").src = produkt.billede.guid;
 
-        produkter.forEach(lignende => {
-            console.log("forEachProdukt");
-            const dest = document.querySelector("#lignendeliste");
-            const temp = document.querySelector("template").content;
-
-            if (lignende.id != info.id && lignende.categories.includes(parseInt(info.categories))) {
-
-                console.log("IF");
-
-                const klon = temp.cloneNode(true);
-
-                klon.querySelector(".produktbillede").src = lignende.billede.guid;
-                klon.querySelector(".lignendenavn").textContent = lignende.navn;
-                klon.querySelector(".lignendesize").textContent = lignende.size;
 
 
-
-                klon.querySelector("#lignende_container").addEventListener("click", () => location.href = lignende.link);
-
-                dest.appendChild(klon);
-                //klon.querySelector("").
             }
-        });
-
-    }
 
 
     </script>

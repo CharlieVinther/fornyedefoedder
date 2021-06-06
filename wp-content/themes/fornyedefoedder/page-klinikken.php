@@ -43,7 +43,18 @@ Jeg har gennem en del år ønsket at være selvstændig erhvervsdrivende indenfo
 I arbejdet hermed anvender jeg min brede sundhedsmæssige erfaring som jeg har erhvervet ved arbejde med blandt børn og ældre mennesker gennem mange år, og kombinerer dette med den nyeste viden indenfor faget. </p>
                 </article>
 					</div>
+				<div class="container galleri">
+					<div class="container">
+
+					<h2>
+						Billeder fra klinikken
+					</h2>
+						</div>
+			<?php echo do_shortcode('[modula id="1614"]'); ?>
+
+				</div>
             </section>
+
             <section id="section_two">
 				<div class="container">
 

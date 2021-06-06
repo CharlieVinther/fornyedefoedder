@@ -22,11 +22,16 @@ get_header();
 				</h1>
 			</div>
 			 <section id="second_section">
-            <div class="container">
+               <div class="container dropdown">
+
+  <button class="btn" style="border-left:1px solid navy">
+	  Filtrer
+    <i class="fa fa-caret-down"></i>
+  </button>
                 <nav id="filtrering">
-                <button data-info="alle" class="valgt filter">Alle artikler</button>
+                 <button data-info="alle" class="valgt filter">Alle</button>
              </nav>
-             </div>
+				</div>
             </section>
             <section id="first_section">
                 <div class="container">
@@ -42,25 +47,13 @@ get_header();
             <h3 class="titel"></h3>
 			<div class="info_grid">
             <p class="kilde"></p>
-            <a href="" target="_blank" class="link">
                 <button>Læs mere</button>
-            </a>
 				</div>
         </article>
     </template>
 
 
     <script>
-                async function hentData() {
-
-                    const catrespons = await fetch(caturl);
-                    categories = await catrespons.json();
-                    console.log(produkter);
-
-                    opretKnapper();
-                }
-
-
 
 
 
@@ -81,20 +74,18 @@ get_header();
         hentData();
     }
 
+
     async function hentData() {
         const respons = await fetch(url);
-        info = await respons.json();
+        infoer = await respons.json();
 		const catrespons = await fetch(caturl);
                     categories = await catrespons.json();
-                    console.log(info);
+                    console.log(infoer);
 
                     opretKnapper();
-
-        console.log(info);
-
+        console.log(infoer);
         visInfo();
     }
-
 
 
 		function opretKnapper() {
@@ -122,7 +113,8 @@ get_header();
                 function filtrerInfo() {
                     filter = this.dataset.info;
                     console.log("filtrerInfo")
-
+document.querySelector(".valgt").classList.remove("valgt");
+                    this.classList.add("valgt");
                     visInfo();
 				}
 
@@ -134,20 +126,18 @@ get_header();
 
         dest.textContent = "";
 
-        info.forEach(e => {
+        infoer.forEach(info => {
             console.log("forEach");
 
-            if (filter == "alle" || e.categories.includes(parseInt(filter))) {
+            if (filter == "alle" ||  info.categories.includes(parseInt(filter))) {
 
             const klon = temp.cloneNode(true);
 
-            
+            klon.querySelector(".titel").innerHTML = info.titel;
+            klon.querySelector("img").src = info.illu.guid;
+            klon.querySelector(".kilde").innerHTML = info.kilde;
 
-            klon.querySelector(".titel").innerHTML = e.titel;
-            klon.querySelector("img").src = e.illu.guid;
-            klon.querySelector(".kilde").innerHTML = e.kilde;
-
-            klon.querySelector(".link").href = e.kildelink;
+			klon.querySelector("button").addEventListener("click", () => location.href = info.link);
 
             dest.appendChild(klon);
 

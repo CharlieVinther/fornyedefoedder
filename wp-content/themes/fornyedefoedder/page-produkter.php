@@ -38,11 +38,17 @@ get_header();
             </section>
 
             <section id="second_section">
-            <div class="container">
+            <div class="container dropdown">
+
+  <button class="btn" style="border-left:1px solid navy">
+	  Filtrer
+    <i class="fa fa-caret-down"></i>
+  </button>
                 <nav id="filtrering">
                  <button data-produkter="alle" class="valgt filter">Alle produkter</button>
              </nav>
-             </div>
+				</div>
+
             </section>
 
             <div class="container">
@@ -113,7 +119,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 console.log("produkter");
 
                 const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt?per_page=100";
-                const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories?per_page=20/";
+                const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
 
                 document.addEventListener("DOMContentLoaded", start);
 
@@ -159,7 +165,8 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 function filtrerProdukter() {
                     filter = this.dataset.produkter;
                     console.log("filtrerProdukter", filter);
-
+document.querySelector(".valgt").classList.remove("valgt");
+                    this.classList.add("valgt");
                     visProdukter();
                 }
 
@@ -178,6 +185,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                         if (filter == "alle" || produkt.categories.includes(parseInt(filter))) {
 
                             console.log("IF");
+
 
                             const klon = temp.cloneNode(true);
 
