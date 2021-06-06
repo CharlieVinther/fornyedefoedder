@@ -113,7 +113,7 @@ Jeg har derfor samlet noget information omkring de spørgsmål du evt. kunne hav
                 console.log("produkter");
 
                 const url = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/produkt?per_page=100";
-                const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories/";
+                const caturl = "https://charlievinther.dk/fornyedefoedder/wp-json/wp/v2/categories?per_page=20/";
 
                 document.addEventListener("DOMContentLoaded", start);
 
